@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Course Registration</h1>
+    <p>Select your courses for this semester</p>
+  </header>
+
+  <main>
+    <section class="courses">
+      <h2>Available Courses</h2>
+      <input id="search" type="search" placeholder="Search courses...">
+      <div id="courseList">
+        <article class="course" data-name="Web Development">
+          <h3>CS101 - Web Development</h3>
+          <p>Learn HTML, CSS and JavaScript</p>
+          <span>4 Credits</span>
+          <button>Add Course</button>
+        </article>
+        <article class="course" data-name="Python Programming">
+          <h3>CS202 - Python Programming</h3>
+          <p>Learn programming and problem solving</p>
+          <span>3 Credits</span>
+          <button>Add Course</button>
+        </article>
+        <article class="course" data-name="UI UX Design">
+          <h3>DS110 - UI/UX Design</h3>
+          <p>Design beautiful user-friendly websites</p>
+          <span>3 Credits</span>
+          <button>Add Course</button>
+        </article>
+      </div>
+    </section>
+
+    <aside>
+      <h2>My Schedule</h2>
+      <ul id="schedule"><li>No courses selected.</li></ul>
+      <strong>Total Credits: <span id="credits">0</span></strong>
+      <button id="register">Complete Registration</button>
+      <p id="message"></p>
+    </aside>
+  </main>
+  <script src="Registration.js"></script>
+</body>
+</html>

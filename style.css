@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+body {
+  background: #f3f4ff;
+  color: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+header {
+  background: #4f46e5;
+  color: white;
+  padding: 35px 8%;
+}
+header h1 { margin: 0 0 8px; }
+main {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 300px;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+.courses, aside {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0001;
+  padding: 22px;
+}
+input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 10px 0 18px;
+  padding: 11px;
+  width: 100%;
+}
+.course {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 15px;
+}
+.course h3 { color: #3730a3; margin: 0 0 6px; }
+.course p { color: #666; margin: 0 0 8px; }
+.course span { color: #4f46e5; font-size: .9rem; }
+button {
+  background: #4f46e5;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  float: right;
+  padding: 9px 12px;
+}
+button:hover { background: #3730a3; }
+aside { height: fit-content; }
+#schedule { padding-left: 20px; }
+#schedule li { margin: 12px 0; }
+#register { float: none; margin-top: 20px; width: 100%; }
+#message { color: green; text-align: center; }
+@media (max-width: 700px) {
+  main { grid-template-columns: 1fr; }
+}
